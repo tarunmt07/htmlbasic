@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <h1> Text field </h1>
+        <lable for="fname"> First Name </lable>
+        <input type="text" id="fname">
+        <br><br>
+
+        <lable for="lname"> Last Name </lable>
+        <input type="text" id="lname">
+        <hr>
+    </form>
+
+    <h2> Text area </h2>
+    <form action="#">
+        <lable for="message"> Message </lable>
+        <br />
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <br />
+        <input type="submit" value="submit" />
+    </form>
+    <hr />
+
+    <h1> Radio fields </h1>
+    <form action="post">
+        <lable for="fruit"> Select a fruit </lable>
+        <select id="fruit" name="fruit">
+            <option value="">Select on Fruit </option>
+            <option value="apple"> Apple </option>
+            <option value="banana"> Banana </option>
+            <option value="orange"> Orange </option>
+        </select>
+        <br />
+        <br />
+        <input type="submit" value="submit">
+    </form>
+    <hr />
+
+    <h1> Radio Buttons </h1>
+    <input type="radio" id="netflix"
+    name="streaming" value="netflix">
+    <label for="netflix"> NETFLIX </label>
+    <input type="radio" id="hulu"
+    name="streaming" value="hulu">
+    <label for="hulu"> HULU</label>
+    <input type="radio" id="prime"
+    name="streaming" value="prime">
+    <label for="prime"> PRIME </label>
+    <br>
+    <input type="submit" value="submit">
+    <hr />
+
+    <h1> Check Box </h1>
+    <form method="get">
+        <label>
+            <input type="checkbox" name="subscriber" value="yes"> Subscriber </label>
+            <br>
+        <label>
+            <input type="checkbox" name="subscriber" value="no"> UnSubscriber </label>  
+            <br>
+            <input type="submit" value="submit"> 
+        </label>
+    </form>
+    <hr>
+
+    <h1> password </h1>
+    <form>
+        Username: <input type="text" name="username"> <br>
+        password: <input type="password" name="password"> <br>
+        <br />
+        <input type="submit" value="submit">
+        <input type="reset" value="Reset">
+    </form>
+    <hr>
+
+    <h1> File upload </h1>
+    <form>
+    Select File:<input type="file" name="file" accept="image/*"> <br>
+    <input type="submit" value="submit">
+    </form>
+    <hr>
+
+    <h1> Button Control </h1>
+    <form>
+        
+    </form>
+</body>
+</html>

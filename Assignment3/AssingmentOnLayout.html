@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- This is a assignment of simple layout page using using different types of Form -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> MY LAUOUT</title>
+    <link rel="icon" href="kheloo.svg" type="image/png" />
+    <style>
+        body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-position: center;
+    color: red;
+  }
+      header {
+        background-color: rgb(8, 184, 254);
+        padding: 10px;
+        text-align: center;
+      }
+      nav {
+        background-color: rgb(153, 153, 244);
+        padding: 5px;
+        text-align: center;
+      }
+      nav a {
+        text-decoration: none;
+        margin-right: 15px;
+        color: green;
+        font-weight: bold;
+      }
+      main {
+        padding: 10px;
+        background-color: rgb(86, 204, 250);
+        margin: auto;
+        max-width: 800px;
+      }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 580px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(216, 212, 212);
+          
+        }
+        footer {
+            background-color: rgb(247, 247, 73);
+            padding: 10px;
+            text-align: center; 
+        }
+        .submit {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .submit:hover {
+            background-color: #690450;
+        }
+            label {
+                font-weight: bold;
+        }
+        input[type="checkbox"],input[type="radio"]
+        { 
+          margin-right: 5px;
+
+        }
+        h4{
+            text-align: center;
+            margin-bottom:10px;
+            font-size: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1> Sports Registration Form</h1>
+      <img class="logo" src="kheloo.svg" alt="logo" hight="70px" width="70px">
+    </header>
+    <nav>
+      <a href="https://nsrs.kheloindia.gov.in/#/about"> About </a>
+      <a href="https://nsrs.kheloindia.gov.in/#/about"> Schemes </a>
+      <a href="https://nsrs.kheloindia.gov.in/#/about"> Log In </a>
+      <a href="https://nsrs.kheloindia.gov.in/#/about"> Contact</a>
+    </nav>
+    <main>
+      <h4> Fill the details </h4>
+      <form action="#" method="get">
+        <label for="name"> Player Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="phone"> Choose a sport :</label>
+        <select id="course" name="course">
+            <option value="bca"> Cricket </option>
+            <option value="mca"> Vollybol </option>
+            <option value="bba"> Footbol </option></select><br><br>
+
+        <label for="phone"> Player Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="dob"> Player Birth Date:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="gender"> Gender:</label>
+        <div>
+          <div class="inlign-group">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        </div>
+        </div>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="30"></textarea
+        ><br /><br />
+
+        <label for="course"> Positions Played:</label>
+        <select id="course" name="course">
+          <option value="bca"> Batsman </option>
+          <option value="mca"> Bowler </option>
+          <option value="bba"> All Rounder</option>
+          <option value="mba"> Net player</option>
+          <option value="mba"> Others </option></select
+        ><br /><br />
+
+        <label for="hobbies">Hobbies:</label>
+        <div>
+          <div class="inlign-group">
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading"> Running </label>
+        <input type="checkbox" id="writing" name="hobbies" value="writing">
+        <label for="writing"> GYMnastic</label>
+        <input type="checkbox" id="playing" name="hobbies" value="playing">
+        <label for="playing"> Biking/Hiking</label><br><br>
+        </div>
+        </div>
+        <br><br>
+
+        <label for="password"> Create password :</label><input type="password"></label><br><br>
+
+        <label for="id_proof">Upload ID Proof:</label><input type="file"></label><br><br>
+
+
+        <label for="submit"> Register</label>
+        <input class="submit" type="submit" value="Submit">
+      </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 NATIONAL SPORTS REPOSITORY SYSTEM</p>
+        <p>Contact: +91 9113924169 </p>
+    </footer>
+  </body>
+</html>
